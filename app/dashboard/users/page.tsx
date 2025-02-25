@@ -169,8 +169,6 @@ export default function UsersPage() {
               <Button variant="outline">Export</Button>
             </div>
           </div>
-
-          {/* Placeholder for user table - you can add a data table component here */}
           <div className="mt-4">
             <DataTable columns={columns} data={users} />
           </div>

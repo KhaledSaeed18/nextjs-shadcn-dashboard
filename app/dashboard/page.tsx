@@ -1,5 +1,8 @@
 import { StatsCard } from "@/components/dashboard/StatsCard"
 import { statsData } from "@/constants/statsData"
+import { Card } from "@/components/ui/card"
+import { RecentSales } from "@/components/dashboard/RecentSales"
+import { Overview } from "@/components/dashboard/overview"
 
 export default function DashboardPage() {
     return (
@@ -17,6 +20,22 @@ export default function DashboardPage() {
                         icon={stat.icon}
                     />
                 ))}
+            </div>
+
+            {/* Charts and Recent Sales Grid */}
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+                <Card className="col-span-1 md:col-span-4">
+                    <div className="p-6">
+                        <h2 className="text-lg font-medium mb-2">Overview</h2>
+                        <Overview />
+                    </div>
+                </Card>
+                <Card className="col-span-1 md:col-span-3">
+                    <div className="p-6">
+                        <h2 className="text-lg font-medium mb-2">Recent Sales</h2>
+                        <RecentSales />
+                    </div>
+                </Card>
             </div>
         </div>
     )

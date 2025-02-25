@@ -1,11 +1,14 @@
-"use client"
-
 import type React from "react"
-
+import { Metadata } from "next"
 import { Suspense } from "react"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { DashboardSidebar } from "@/components/dashboard/sidebar"
 import { DashboardHeader } from "@/components/dashboard/header"
+
+export const metadata: Metadata = {
+    title: 'Dashboard',
+    description: 'Manage your account and settings',
+}
 
 export default function DashboardLayout({
     children,

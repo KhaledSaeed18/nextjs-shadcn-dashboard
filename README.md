@@ -47,7 +47,7 @@ A modern, responsive dashboard template built with Next.js, shadcn/ui, and Tailw
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/nextjs-dashboard-template.git
+git clone https://github.com/KhaledSaeed18/nextjs-shadcn-dashboard.git
 cd nextjs-dashboard-template
 ```
 

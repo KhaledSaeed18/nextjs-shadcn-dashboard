@@ -1,8 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 Next.js Dashboard Template
+
+A modern, responsive dashboard template built with Next.js, shadcn/ui, and Tailwind CSS. This template provides a solid foundation for building administrative interfaces, data visualization applications, and control panels.
+
+## Features
+
+- 🚀 Built with Next.js 15 and React 19
+- 🎨 Styled with Tailwind CSS
+- 🌓 Light/Dark mode with next-themes
+- 📊 Data visualization with Recharts
+- 📋 Data tables with TanStack Table
+- 🧩 UI components from shadcn/ui
+- 🔍 Fully responsive design
+- ⚡ Fast performance with Turbopack
+
+## Tech Stack
+
+### Core
+
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://react.dev/) - UI library
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+
+### UI & Styling
+
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+- [Radix UI](https://www.radix-ui.com/) - Headless UI primitives
+- [Lucide React](https://lucide.dev/) - Icon library
+- [class-variance-authority](https://cva.style/docs) - Component variant management
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge) - Merge Tailwind classes
+
+### Data & Visualization
+
+- [TanStack Table](https://tanstack.com/table) - Headless table management
+- [Recharts](https://recharts.org/) - Chart library
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.0 or later
+- npm or yarn or pnpm
+
+### Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/yourusername/nextjs-dashboard-template.git
+cd nextjs-dashboard-template
+```
+
+2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server
 
 ```bash
 npm run dev
@@ -10,27 +69,20 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Theming
 
-## Learn More
+This template uses next-themes for theme management. You can customize the themes in the `tailwind.config.js` file.
 
-To learn more about Next.js, take a look at the following resources:
+### Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The UI components are built with shadcn/ui, which provides a collection of accessible and customizable components. You can modify them to fit your needs or add new components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Adding Pages
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Create new pages by adding files to the `app` directory. Next.js 15 uses the App Router for routing.
